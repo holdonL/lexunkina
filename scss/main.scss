@@ -22,6 +22,11 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 1rem;
     margin: 0;
+    background-image: url(../img/bg-body.jpg);
+    background-position: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 img {
@@ -31,15 +36,52 @@ img {
 
 .container {
     margin: 0 auto;
-    width: 800px;
-    padding: 5rem 0;
+    width: 650px;
+    padding: 50px 150px;
+    border: 1px solid #fff;
 }
+
+#music .container,
+#about .container {
+  border: 0;
+}
+
+#about .container {
+  background-color: rgba(12, 12, 12, 0.9);
+}
+
+.wrapper {
+  padding: 100px 0;
+}
+
+hr {
+  display: block;
+  width: 70%;
+  opacity: 0.6;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.small-heading {
+  font-size: 25px;
+}
+
+.section {
+  text-align: center;
+}
+
 
 // NAVIGATION
 .main-nav {
     position: fixed;
     width: 100%;
-    background-color: rgba($primary-color, 0.5);
+    background-color: rgba(12, 12, 12, 0.5);
     letter-spacing: 2px;
 }
 
@@ -82,20 +124,46 @@ img {
     background-image: url(../img/front.jpg);
     background-position: center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
-section#music {
-    text-align: center;
-    color: $primary-color;
-    background-color: rgb(255, 255, 255);
+.music-section {
+    font-size: 1.2rem;
+    width: 100%;
+    color: $secondary-color;
+    background-color: rgb(12, 12, 12);
+}
+
+.about-section {
+    font-size: 1.2rem;
+    min-height: 800px;
+    color: $secondary-color;
+}
+
+.concerts-section {
+    background-color: rgb(12, 12, 12);
+    width: 100%;
+    min-height: 800px;
+    color: $secondary-color;
+}
+
+.footer {
+    color: $secondary-color;
+    width: 100%;
+    padding: 1rem 0;
+    background-color: rgb(12, 12, 12);
+}
+
+.footer-copyright {
+    width: 200px;
+    margin: 0 auto;
 }
 
 .video {
     outline: none;
-    width: 800px;
+    width: 100%;
     height: 450px;
     background-color: #000;
-    box-shadow: 0px 0px 7px #000;
 }
 
 .audio {
@@ -113,4 +181,17 @@ section#music {
 .paragraph {
     margin-top: 30px;
     margin-bottom: 60px;
+}
+  
+
+// CONCERTS 
+
+.concerts-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  list-style: none;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
 }

@@ -9,6 +9,11 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 1rem;
   margin: 0;
+  background-image: url(../img/bg-body.jpg);
+  background-position: fixed;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 img {
@@ -18,14 +23,50 @@ img {
 
 .container {
   margin: 0 auto;
-  width: 800px;
-  padding: 5rem 0;
+  width: 650px;
+  padding: 50px 150px;
+  border: 1px solid #fff;
+}
+
+#music .container,
+#about .container {
+  border: 0;
+}
+
+#about .container {
+  background-color: rgba(12, 12, 12, 0.9);
+}
+
+.wrapper {
+  padding: 100px 0;
+}
+
+hr {
+  display: block;
+  width: 70%;
+  opacity: 0.6;
+}
+
+.heading {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.small-heading {
+  font-size: 25px;
+}
+
+.section {
+  text-align: center;
 }
 
 .main-nav {
   position: fixed;
   width: 100%;
-  background-color: rgba(31, 31, 31, 0.5);
+  background-color: rgba(12, 12, 12, 0.5);
   letter-spacing: 2px;
 }
 
@@ -73,21 +114,46 @@ img {
   background-image: url(../img/front.jpg);
   background-position: center;
   background-size: cover;
+  background-attachment: fixed;
 }
 
-section#music {
-  text-align: center;
-  color: #1f1f1f;
-  background-color: white;
+.music-section {
+  font-size: 1.2rem;
+  width: 100%;
+  color: white;
+  background-color: #0c0c0c;
+}
+
+.about-section {
+  font-size: 1.2rem;
+  min-height: 800px;
+  color: white;
+}
+
+.concerts-section {
+  background-color: #0c0c0c;
+  width: 100%;
+  min-height: 800px;
+  color: white;
+}
+
+.footer {
+  color: white;
+  width: 100%;
+  padding: 1rem 0;
+  background-color: #0c0c0c;
+}
+
+.footer-copyright {
+  width: 200px;
+  margin: 0 auto;
 }
 
 .video {
   outline: none;
-  width: 800px;
+  width: 100%;
   height: 450px;
   background-color: #000;
-  -webkit-box-shadow: 0px 0px 7px #000;
-          box-shadow: 0px 0px 7px #000;
 }
 
 .audio {
@@ -103,5 +169,17 @@ section#music {
 .paragraph {
   margin-top: 30px;
   margin-bottom: 60px;
+}
+
+.concerts-list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  grid-gap: 20px;
+  list-style: none;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
 }
 /*# sourceMappingURL=main.css.map */
