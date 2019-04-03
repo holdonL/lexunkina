@@ -8,6 +8,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>LEXUNKИNA</title>
 </head>
 
@@ -15,7 +17,9 @@
     <header id="header">
         <nav class="main-nav">
             <ul class="nav-list">
-                <a href="#header" class="logo">LEXUNKИNA</a>
+                <li class="logo">
+                    <a href="#header">LEXUNKИNA</a>
+                </li>
                 <li class="nav-item">
                     <a href="#music">
                         Музыка
@@ -36,7 +40,7 @@
                         Контакты
                     </a>
                 </li>
-                <audio controls autoplay class="audio" src="music/pozh.mp3"></audio>
+                <!-- <audio controls autoplay class="audio" src="music/pozh.mp3"></audio> -->
             </ul>
         </nav>
         <section class="front"></section>
@@ -44,17 +48,45 @@
     <main>
         <section id="music" class="section music-section">
             <div class="wrapper">
-                <div class="container">
-                    <h2 class="heading">Музыка</h2>
-                    <hr>
-                    <p class="paragraph">
-                        Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Cumque hic iure reiciendis consectetur, facere
-                        sapiente obcaecati fugit recusandae repudiandae
-                        vero. Facere nihil pariatur, neque hic, ut
-                        cupiditate maxime commodi, quidem harum porro
-                        officiis totam sunt dolores quaerat ducimus
-                        reiciendis consequuntur?
+                <h2 class="heading">Музыка</h2>
+                <hr>
+                <div class="container music-grid">
+                    <img class="album-cover" src="img/album-cover.jpg" alt="" width="200" height="150">
+                    <div class="music-description">
+                        <h2 class="small-heading">— Пожалуйста —</h2>
+                        <p class="paragraph">
+                            Это очень крутой трек, мой первый сингл. Я его очень люблю, он мне очень нравится. Всем
+                            спасибо, кто помогал в записи, сведении и прочей фигни. Слушайте на здоровье. Всем бб и ку и
+                            туда сюда. Ы здарова всем.
+                        </p>
+                    </div>
+                    <p class="paragraph lead">
+                        Трек доступен на многих музыкальных платформах, а это значит, что у вас
+                        появилось больше
+                        возможностей услышать его. Все для вас, мои дорогие!
+                    </p>
+                    <ul class="music-link-list">
+                        <li>
+                            <a href="#"><i class="fab fa-spotify fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fas fa-podcast fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-yandex fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-apple fa-2x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fab fa-google fa-2x"></i></a>
+                        </li>
+                    </ul>
+                    <h2 class="small-heading lead live-sessions">— Живые выступления —</h2>
+                    <p class="paragraph lead">
+                        Если есть желание посмотреть живое выступление, милости прошу на мой ютуб канал! Он такой
+                        классный и вообще там очень много записей живых выступлений, моих крутотенюнских клипов и вообще
+                        туда сюда.
                     </p>
                     <iframe class="video" width="800" height="450" src="https://www.youtube.com/embed/4A9R5Ya8aM8"
                         frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
