@@ -48,10 +48,6 @@ img {
     padding: 50px 0;
 }
 
-.music-section hr {
-    width: 30%;
-}
-
 .about-section .container {
   background-color: rgba(12, 12, 12, 0.9);
 }
@@ -62,7 +58,7 @@ img {
 
 hr {
   display: block;
-  width: 70%;
+  width: 500px;
   opacity: 0.6;
 }
 
@@ -196,12 +192,7 @@ hr {
     grid-column-start: 1;
     grid-column-end: 3;
     margin-bottom: 30px;
-}
-
-.live-sessions {
-    margin-bottom: 0;
-}
-  
+} 
 
 // CONCERTS 
 
@@ -232,7 +223,7 @@ hr {
     justify-content: space-around;
     list-style: none;
     margin: 0;
-    margin-bottom: 100px;
+    margin-bottom: 150px;
     a {
         color: #fff;
         text-decoration: none;
