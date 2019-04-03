@@ -6,10 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico">
+    <meta name="theme-color" content="#0c0c0c">
+    <meta name="Description" content="Домашняя страница музыкального исполнителя Екатерины Лексункиной">
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
-        integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
     <title>LEXUNKИNA</title>
 </head>
 
@@ -40,10 +41,9 @@
                         Контакты
                     </a>
                 </li>
-                <!-- <audio controls autoplay class="audio" src="music/pozh.mp3"></audio> -->
             </ul>
         </nav>
-        <section class="front"></section>
+        <div class="front"></div>
     </header>
     <main>
         <section id="music" class="section music-section">
@@ -52,9 +52,13 @@
                 <hr>
                 <div class="container">
                     <div class="music-grid">
-                        <img class="album-cover" src="img/album-cover.jpg" alt="" width="400" height="250">
+                        <img class="album-cover" src="img/album-cover.jpg" alt="Обложка сингла Пожалуйста" width="400" height="250">
                         <div class="music-description">
-                            <h3 class="small-heading">— Пожалуйста —</h3>
+                            <h3 class="small-heading">
+                                <span class="heading-decor">— </span>
+                                Пожалуйста
+                                <span class="heading-decor"> —</span>
+                            </h3>
                             <p class="paragraph">
                                 Это очень крутой трек, мой первый сингл. Я его очень люблю, он мне очень нравится. Всем
                                 спасибо, кто помогал в записи, сведении и прочей фигни. Слушайте на здоровье. Всем бб и
@@ -69,19 +73,19 @@
                         </p>
                         <ul class="music-link-list">
                             <li>
-                                <a href="#"><i class="fab fa-spotify fa-2x"></i></a>
+                                <a href="#"><span class="visually-hidden">Послушать сингл на Spotify</span><i class="fab fa-spotify fa-2x"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fas fa-podcast fa-2x"></i></a>
+                                <a href="#"><span class="visually-hidden">Послушать сингл на Deezer</span><i class="fas fa-podcast fa-2x"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-yandex fa-2x"></i></a>
+                                <a href="#"><span class="visually-hidden">Послушать сингл на Яндекс Музыке</span><i class="fab fa-yandex fa-2x"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-apple fa-2x"></i></a>
+                                <a href="#"><span class="visually-hidden">Послушать сингл на Apple Music</span><i class="fab fa-apple fa-2x"></i></a>
                             </li>
                             <li>
-                                <a href="#"><i class="fab fa-google fa-2x"></i></a>
+                                <a href="#"><span class="visually-hidden">Послушать сингл на Google Music</span><i class="fab fa-google fa-2x"></i></a>
                             </li>
                         </ul>
                     </div>
@@ -94,10 +98,9 @@
                             вообще
                             туда сюда.
                         </p>
-                        <iframe class="video" width="800" height="450" src="https://www.youtube.com/embed/4A9R5Ya8aM8"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-                            allowfullscreen></iframe>
+                        <iframe title="Живое выступление на творческой площадке МОРЖ в Санкт-Петербурге" class="video" width="760" height="400"
+                            src="https://www.youtube.com/embed/4A9R5Ya8aM8?color=white&rel=0&autoplay=0&controls=2&origin=https://holdonl.github.io/lexunkina/"
+                            allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     </div>
                 </div>
             </div>
@@ -215,13 +218,23 @@
             </div>
         </section>
     </main>
-    <footer>
-        <div class="footer">
-            <p class="footer-copyright">Copyright &copy; 2019</p>
-        </div>
+    <footer id="contacts" class="page-footer">
+        <section class="social-links">
+            <h2 class="visually-hidden">Я в социальных сетях</h2>
+            <ul class="social-list">
+                <li>
+                    <a class="social-link" href="#"><span class="visually-hidden">Я в Фейсбуке</span><i class="fab fa-facebook-square fa-2x"></i></a>
+                </li>
+                <li>
+                    <a class="social-link" href="#"><span class="visually-hidden">Я в Вконтакте</span><i class="fab fa-vk fa-2x"></i></a>
+                </li>
+                <li>
+                    <a class="social-link" href="#"><span class="visually-hidden">Я в Инстаграме</span><i class="fab fa-instagram fa-2x"></i></a>
+                </li>
+            </ul>
+        </section>
     </footer>
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js"
-        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <script src="js/main.js"></script>
 </body>
 
