@@ -110,3 +110,10 @@
         flex-direction: column;
     }
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+    .front {
+
+        background: none;
+    }
+}

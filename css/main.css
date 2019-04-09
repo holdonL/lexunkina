@@ -783,4 +783,10 @@ hr {
             flex-direction: column;
   }
 }
+
+@supports (-webkit-overflow-scrolling: touch) {
+  .front {
+    background: none;
+  }
+}
 /*# sourceMappingURL=main.css.map */
