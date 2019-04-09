@@ -679,6 +679,11 @@ hr {
     z-index: -1;
     background-attachment: scroll;
   }
+  .front::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1170px) {

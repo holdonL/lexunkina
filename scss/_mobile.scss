@@ -5,6 +5,12 @@
         content: "";
         z-index: -1;
         background-attachment: scroll;
+
+        &::before {
+            content: "";
+            width: 100%;
+            height: 100%;
+        }
     }
 }
 
