@@ -469,6 +469,63 @@ hr {
   letter-spacing: 5px;
 }
 
+.music-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 130px;
+}
+
+.album-cover {
+  width: 400px;
+  height: 277px;
+  border: 1px solid white;
+}
+
+.music-description {
+  width: 330px;
+  font-size: 16px;
+}
+
+.music-description .paragraph {
+  text-align: left;
+  margin-top: 30px;
+}
+
+.music-link-list {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 0 120px;
+  margin: 0;
+}
+
+.music-link-list a {
+  color: #fff;
+  text-decoration: none;
+  -webkit-transition: ease-out 0.6s all;
+  transition: ease-out 0.6s all;
+  display: inline-block;
+  vertical-align: top;
+  height: 50px;
+  width: 50px;
+}
+
+.music-link-list a:hover {
+  color: rgba(195, 0, 255, 0.726);
+}
+
 .front {
   width: 100%;
   height: 100vh;
@@ -611,63 +668,6 @@ hr {
       grid-column-start: 1;
   grid-column-end: 3;
   margin-bottom: 30px;
-}
-
-.music-flex {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  margin-bottom: 130px;
-}
-
-.album-cover {
-  width: 400px;
-  height: 277px;
-  border: 1px solid white;
-}
-
-.music-description {
-  width: 330px;
-  font-size: 16px;
-}
-
-.music-description .paragraph {
-  text-align: left;
-  margin-top: 30px;
-}
-
-.music-link-list {
-  -ms-flex-preferred-size: 100%;
-      flex-basis: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  list-style: none;
-  padding: 0 120px;
-  margin: 0;
-}
-
-.music-link-list a {
-  color: #fff;
-  text-decoration: none;
-  -webkit-transition: ease-out 0.6s all;
-  transition: ease-out 0.6s all;
-  display: inline-block;
-  vertical-align: top;
-  height: 50px;
-  width: 50px;
-}
-
-.music-link-list a:hover {
-  color: rgba(195, 0, 255, 0.726);
 }
 
 @media screen and (max-width: 768px) {
