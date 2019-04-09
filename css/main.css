@@ -672,22 +672,6 @@ hr {
 }
 
 /* CSS specific to iOS devices */
-@supports (-webkit-overflow-scrolling: touch) {
-  .front {
-    background: none;
-  }
-  .front::before {
-    position: fixed;
-    content: "";
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    background-image: url(../img/front.jpg);
-    background-position: center;
-    background-size: cover;
-  }
-}
-
 @media screen and (min-width: 769px) and (max-width: 1170px) {
   .concerts-section .container {
     -webkit-box-sizing: border-box;
@@ -717,6 +701,21 @@ hr {
 @media screen and (max-width: 768px) {
   .front {
     background-image: url(../img/front-tablet.jpg);
+  }
+  @supports (-webkit-overflow-scrolling: touch) {
+    .front {
+      background: none;
+    }
+    .front::before {
+      position: fixed;
+      content: "";
+      z-index: -1;
+      width: 100%;
+      height: 100vh;
+      background-image: url(../img/front.jpg);
+      background-position: center;
+      background-size: cover;
+    }
   }
   .container {
     width: 650px;
