@@ -674,7 +674,10 @@ hr {
 /* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
   .front {
-    background-image: url(../img/front-tablet-lol.jpg);
+    position: fixed;
+    content: "";
+    z-index: -1;
+    background-attachment: scroll;
   }
 }
 
