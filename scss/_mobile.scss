@@ -8,6 +8,18 @@
         width: 900px;
         padding: 50px 80px;
     }
+
+    .about-section .container {
+        width: 800px;
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+
+        .paragraph {
+            width: 500px;
+            align-self: center;
+        }
+    }
 }
 
 //Tablets & Small Laptops
