@@ -1,0 +1,75 @@
+//Widescreens
+@include mediaXL {}
+
+//Desktops & Laptops
+@include mediaLg {}
+
+//Tablets & Small Laptops
+@include mediaMd {
+
+    .front {
+        background-image: url(../img/front-tablet.jpg);
+    }
+
+    .container {
+        width: 650px;
+        margin: 0 auto;
+    }
+
+    .music-grid {
+        flex-direction: column;
+        align-items: center;
+
+    }
+
+    .music-grid>* {
+        width: 500px;
+        margin: 0 auto;
+    }
+
+    .wrapper {
+        width: 700px;
+        margin: 0 auto;
+
+        .album-cover {
+            width: 300px;
+            height: 200px;
+        }
+    }
+
+    .about-section .container {
+        width: 650px;
+        padding: 50px 30px;
+        display: flex;
+        flex-direction: column;
+
+        .paragraph {
+            width: 500px;
+            align-self: center;
+        }
+    }
+
+    .concerts-section .container {
+        width: 650px;
+        padding: 50px 30px;
+    }
+
+    .concerts-item {
+        width: 250px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .concerts-link {
+        margin: 0 auto;
+    }
+}
+
+//Smartphones
+@include mediaSm {
+
+    .nav-list {
+        width: 320px;
+        flex-direction: column;
+    }
+}

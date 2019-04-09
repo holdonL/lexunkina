@@ -473,6 +473,7 @@ hr {
   width: 100%;
   height: 100vh;
   background-image: url(../img/front.jpg);
+  background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
   background-attachment: fixed;
@@ -491,11 +492,34 @@ hr {
   color: white;
 }
 
+.concerts-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  margin-top: 50px;
+  padding: 0;
+}
+
+.concerts-item {
+  width: 350px;
+}
+
 .concerts-section {
   background-color: #0c0c0c;
   width: 100%;
   min-height: 800px;
   color: white;
+}
+
+.concerts-section .wrapper {
+  padding-bottom: 30px;
 }
 
 .concerts-img {
@@ -589,27 +613,26 @@ hr {
   margin-bottom: 30px;
 }
 
-.concerts-list {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
-  grid-gap: 20px;
-  list-style: none;
-  margin: 0;
-  margin-top: 50px;
-  padding: 0;
+.music-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 130px;
 }
 
-.music-grid {
-  display: -ms-grid;
-  display: grid;
-  grid-gap: 20px;
-  -ms-grid-columns: 1fr 1fr;
-      grid-template-columns: 1fr 1fr;
+.album-cover {
+  width: 400px;
+  height: 277px;
+  border: 1px solid white;
 }
 
 .music-description {
+  width: 330px;
   font-size: 16px;
 }
 
@@ -619,18 +642,17 @@ hr {
 }
 
 .music-link-list {
-  -ms-grid-column: 1;
-      grid-column-start: 1;
-  grid-column-end: 3;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   list-style: none;
   padding: 0 120px;
   margin: 0;
-  margin-bottom: 150px;
 }
 
 .music-link-list a {
@@ -648,9 +670,73 @@ hr {
   color: rgba(195, 0, 255, 0.726);
 }
 
-.album-cover {
-  width: 400px;
-  height: 277px;
-  border: 1px solid white;
+@media screen and (max-width: 768px) {
+  .front {
+    background-image: url(../img/front-tablet.jpg);
+  }
+  .container {
+    width: 650px;
+    margin: 0 auto;
+  }
+  .music-grid {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .music-grid > * {
+    width: 500px;
+    margin: 0 auto;
+  }
+  .wrapper {
+    width: 700px;
+    margin: 0 auto;
+  }
+  .wrapper .album-cover {
+    width: 300px;
+    height: 200px;
+  }
+  .about-section .container {
+    width: 650px;
+    padding: 50px 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about-section .container .paragraph {
+    width: 500px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .concerts-section .container {
+    width: 650px;
+    padding: 50px 30px;
+  }
+  .concerts-item {
+    width: 250px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .concerts-link {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .nav-list {
+    width: 320px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=main.css.map */
