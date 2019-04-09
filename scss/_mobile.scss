@@ -1,14 +1,22 @@
 /* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
-    .front-wrapper {
-        position: fixed;
-        content: "";
-        z-index: -1;
-        width: 100%;
-        height: 100vh;
-        background-image: url(../img/front.jpg);
-        background-position: center;
-        background-size: cover;
+    .front {
+
+        background: none;
+        // background-attachment: initial;
+        // background-image: none;
+        // background-size: cover;
+
+        &::before {
+            position: fixed;
+            content: "";
+            z-index: -1;
+            width: 100%;
+            height: 100vh;
+            background-image: url(../img/front.jpg);
+            background-position: center;
+            background-size: cover;
+        }
     }
 }
 

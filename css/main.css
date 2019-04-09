@@ -673,7 +673,10 @@ hr {
 
 /* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
-  .front-wrapper {
+  .front {
+    background: none;
+  }
+  .front::before {
     position: fixed;
     content: "";
     z-index: -1;
