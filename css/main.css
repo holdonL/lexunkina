@@ -670,6 +670,15 @@ hr {
   margin-bottom: 30px;
 }
 
+@media screen and (min-width: 769px) and (max-width: 1170px) {
+  .concerts-section .container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 900px;
+    padding: 50px 80px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .front {
     background-image: url(../img/front-tablet.jpg);

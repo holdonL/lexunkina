@@ -2,7 +2,13 @@
 @include mediaXL {}
 
 //Desktops & Laptops
-@include mediaLg {}
+@include mediaLg {
+    .concerts-section .container {
+        box-sizing: border-box;
+        width: 900px;
+        padding: 50px 80px;
+    }
+}
 
 //Tablets & Small Laptops
 @include mediaMd {
