@@ -19,49 +19,6 @@ $secondary-color-hover: rgba(195, 0, 255, 0.726);
     transition: ease-out 0.6s all;
 }
 
-@mixin viewport-unit($property, $value) {
-    #{$property}: $value;
-
-    $unit: unit($value);
-
-    @if (index((vw, vh, vmin, vmax), $unit) !=null) {
-        $devices: ((768px, 1024px), // iPad (all versions)
-            (320px, 480px), // iPhone 4
-            (320px, 568px) // iPhone 5, 5C, 5S
-            );
-
-        @each $device in $devices {
-            $device-width: nth($device, 1);
-            $device-height: nth($device, 2);
-
-            $device-query: "only screen and (-webkit-min-device-pixel-ratio: 1)";
-            $device-query: "#{$device-query} and (device-width: #{$device-width})";
-            $device-query: "#{$device-query} and (device-height: #{$device-height})";
-
-            $percent: $value / ($value * 0 + 1); // see https://github.com/sass/sass/issues/533
-
-            $percent-width: $device-width * $percent / 100;
-            $percent-height: $device-height * $percent / 100;
-
-            @if ($unit==vmin or $unit==vmax) {
-                @media #{$device-query} {
-                    #{$property}: if($unit==vmin, $percent-width, $percent-height);
-                }
-            }
-
-            @else {
-                @media #{$device-query} and (orientation: portrait) {
-                    #{$property}: if($unit==vw, $percent-width, $percent-height);
-                }
-
-                @media #{$device-query} and (orientation: landscape) {
-                    #{$property}: if($unit==vw, $percent-height, $percent-width);
-                }
-            }
-        }
-    }
-}
-
 //MQ MIXINS
 
 @mixin mediaSm {
@@ -109,6 +66,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
+    overflow-x: hidden;
 }
 
 img {
@@ -170,6 +128,7 @@ hr {
 // NAVIGATION
 .main-nav {
     position: fixed;
+    z-index: 2;
     width: 100%;
     background-color: rgba(12, 12, 12, 0.5);
     letter-spacing: 2px;
@@ -257,12 +216,12 @@ hr {
 }
 
 // SECTION
+
 .front {
     width: 100%;
-    @include viewport-unit(height, 100vh);
+    height: 100vh;
     background-image: url(../img/front.jpg);
     background-repeat: no-repeat;
-    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }
