@@ -673,16 +673,15 @@ hr {
 
 /* CSS specific to iOS devices */
 @supports (-webkit-overflow-scrolling: touch) {
-  .front::before {
-    content: "";
-    width: 100%;
-    height: 100%;
+  .front-wrapper {
     position: fixed;
-    top: 0;
-    left: 0;
+    content: "";
     z-index: -1;
+    width: 100%;
+    height: 100vh;
     background-image: url(../img/front.jpg);
-    background-attachment: scroll;
+    background-position: center;
+    background-size: cover;
   }
 }
 
