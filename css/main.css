@@ -675,6 +675,8 @@ hr {
 @supports (-webkit-overflow-scrolling: touch) {
   .front {
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: -1;
     background-attachment: scroll;
   }
