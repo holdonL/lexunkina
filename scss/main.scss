@@ -58,6 +58,11 @@ $secondary-color-hover: rgba(195, 0, 255, 0.726);
     overflow: hidden;
 }
 
+html,
+body {
+    width: calc(100% - 0px);
+}
+
 body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 1rem;

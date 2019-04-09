@@ -359,6 +359,11 @@ template {
   overflow: hidden;
 }
 
+html,
+body {
+  width: calc(100% - 0px);
+}
+
 body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 1rem;
