@@ -60,9 +60,9 @@
 //Планшеты
 @include mediaMd {
 
-    .front {
-        background-image: url(../img/front-tablet.jpg);
-    }
+    // .front {
+    //     background-image: url(../img/front-tablet.jpg);
+    // }
 
     .container {
         width: 650px;
@@ -109,10 +109,10 @@
 
 //Смартфоны
 @include mediaSm {
-    body {
-        background-image: url(../img/bg-body-mobile.jpg);
-        background-position: center;
-    }
+    // body {
+    //     background-image: url(../img/bg-body-mobile.jpg);
+    //     background-position: center;
+    // }
 
     .header-wrapper {
         width: 100%;
@@ -153,9 +153,9 @@
         }
     }
 
-    .front {
-        background-image: url(../img/front-mobile.jpg);
-    }
+    // .front {
+    //     background-image: url(../img/front-mobile.jpg);
+    // }
 
     // Поворот кнопки меню
     .btn-close {
