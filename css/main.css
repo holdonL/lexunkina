@@ -740,7 +740,7 @@ hr {
 }
 
 /* CSS specific to iOS devices */
-@supports (-webkit-overflow-scrolling: touch) {
+@media screen and (min-width: 769px) and (max-width: 1170px) {
   .front {
     background: none;
   }
@@ -754,9 +754,6 @@ hr {
     background-position: center;
     background-size: cover;
   }
-}
-
-@media screen and (min-width: 769px) and (max-width: 1170px) {
   .concerts-section .container {
     -webkit-box-sizing: border-box;
             box-sizing: border-box;
@@ -788,19 +785,6 @@ hr {
   }
   .container {
     width: 650px;
-    margin: 0 auto;
-  }
-  .music-grid {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-  }
-  .music-grid > * {
-    width: 500px;
     margin: 0 auto;
   }
   .wrapper {
@@ -901,12 +885,6 @@ hr {
   .btn-close .btn-line3 {
     -webkit-transform: rotate(-180deg) translateY(12px);
             transform: rotate(-180deg) translateY(12px);
-  }
-}
-
-@supports (-webkit-overflow-scrolling: touch) {
-  .front {
-    background: none;
   }
 }
 /*# sourceMappingURL=main.css.map */
