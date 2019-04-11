@@ -17,10 +17,10 @@
     }
 }
 
-//Widescreens
+//Широкие экраны 1200+
 @include mediaXL {}
 
-//Desktops & Laptops
+//Десктопы 769 до 1200
 @include mediaLg {
     .concerts-section .container {
         box-sizing: border-box;
@@ -41,7 +41,7 @@
     }
 }
 
-//Tablets & Small Laptops
+//Планшеты
 @include mediaMd {
 
     .front {
@@ -102,18 +102,77 @@
     }
 }
 
-//Smartphones
+//Смартфоны
 @include mediaSm {
+    body {
+        background-image: url(../img/bg-body-mobile.jpg);
+        background-position: center;
+    }
+
+    .header-wrapper {
+        width: 100%;
+    }
+
+    .menu-btn {
+        display: block;
+    }
+
+    //скрывает меню на мобильных и оставляет доступным для читалок
+    .menu-hide {
+        position: absolute !important;
+        clip: rect(1px 1px 1px 1px);
+        clip: rect(1px, 1px, 1px, 1px);
+        padding: 0 !important;
+        border: 0 !important;
+        height: 1px !important;
+        width: 1px !important;
+        overflow: hidden;
+    }
+
+    // --
 
     .nav-list {
-        width: 320px;
+        width: 130px;
+        height: 100vh;
+        justify-content: flex-start;
+        position: absolute;
+        top: 48px;
+        right: 0px;
         flex-direction: column;
+        text-align: right;
+        background-color: rgba(12, 12, 12, 0.5);
+        @include transition;
+
+        a {
+            font-size: 0.8rem;
+        }
+    }
+
+    .front {
+        background-image: url(../img/front-mobile.jpg);
+    }
+
+    // Поворот кнопки меню
+    .btn-close {
+        transform: rotate(180deg);
+
+        & .btn-line1 {
+            transform: rotate(-180deg) translateY(-12px);
+        }
+
+        & .btn-line2 {
+            opacity: 0;
+        }
+
+        & .btn-line3 {
+            transform: rotate(-180deg) translateY(12px);
+        }
     }
 }
 
 @supports (-webkit-overflow-scrolling: touch) {
-    .front {
 
+    .front {
         background: none;
     }
 }

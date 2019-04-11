@@ -15,6 +15,7 @@ $secondary-color: rgb(255, 255, 255);
 $secondary-color-hover: rgba(195, 0, 255, 0.726);
 
 // MIXINS
+
 @mixin transition {
     transition: ease-out 0.6s all;
 }
@@ -134,6 +135,13 @@ hr {
     letter-spacing: 2px;
 }
 
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    width: 700px;
+    margin: 0 auto;
+}
+
 .nav-list {
     list-style: none;
     display: flex;
@@ -165,6 +173,59 @@ hr {
     margin-right: 50px;
     font-weight: bold;
     letter-spacing: 5px;
+    display: inline-block;
+
+    vertical-align: top;
+    min-width: 50px;
+    padding: 15px;
+    color: $secondary-color;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 1rem;
+    @include transition;
+
+    &:hover {
+        color: $secondary-color-hover;
+    }
+}
+
+.menu-btn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    border: 0;
+    margin-right: 15px;
+    font: inherit;
+    padding: 10px;
+    background-color: transparent;
+    align-self: center;
+    position: relative;
+    cursor: pointer;
+    @include transition;
+
+
+    .btn-line {
+        position: absolute;
+        content: "";
+        top: 13px;
+        left: 0;
+        width: 30px;
+        height: 3px;
+        background-color: #fff;
+        @include transition;
+    }
+
+    .btn-line1 {
+        top: 5px;
+    }
+
+    .btn-line3 {
+        top: 21px;
+    }
+
+    &:hover .btn-line {
+        background-color: $secondary-color-hover;
+    }
 }
 
 //Music section
@@ -217,22 +278,13 @@ hr {
 
 // SECTION
 
-// .front-wrapper {
-//     position: fixed;
-//     content: "";
-//     z-index: -1;
-//     width: 100%;
-//     height: 100vh;
-//     background-image: url(../img/front.jpg);
-//     background-position: center;
-//     background-size: cover;
-// }
 
 .front {
     width: 100%;
     height: 100vh;
     background-image: url(../img/front.jpg);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
     background-attachment: fixed;
 }

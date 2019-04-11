@@ -16,31 +16,37 @@
 <body>
     <header id="header">
         <nav class="main-nav">
-            <ul class="nav-list">
-                <li class="logo">
-                    <a href="#header">LEXUNKИNA</a>
-                </li>
-                <li class="nav-item">
-                    <a href="#music">
-                        Музыка
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#about">
-                        Обо мне
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#concerts">
-                        Встречи
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a href="#contacts">
-                        Контакты
-                    </a>
-                </li>
-            </ul>
+            <div class="header-wrapper">
+                <a class="logo smooth-link" href="#header">LEXUNKИNA</a>
+                <button class="menu-btn">
+                    <span class="btn-line btn-line1"></span>
+                    <span class="btn-line btn-line2"></span>
+                    <span class="btn-line btn-line3"></span>
+                </button>
+                <ul class="nav-list menu-hide">
+                    <li class="nav-item">
+                        <a class="smooth-link" href="#music">
+                            Музыка
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smooth-link" href="#about">
+                            Обо&nbsp;мне
+                            <!--^неразрывный пробел для гладкой анимации меню-->
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smooth-link" href="#concerts">
+                            Встречи
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="smooth-link" href="#contacts">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
         <div class="front"></div>
     </header>
