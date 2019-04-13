@@ -363,10 +363,6 @@ body {
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 1rem;
   margin: 0;
-  background-image: url(../img/bg-body.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   overflow-x: hidden;
 }
 
@@ -618,6 +614,13 @@ hr {
   color: white;
 }
 
+.about-section .wrapper {
+  background-image: url(../img/bg-body.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
 .concerts-list {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -674,6 +677,10 @@ hr {
 }
 
 .page-footer {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+  z-index: -3;
   width: 100%;
   padding: 20px 0;
   padding-bottom: 30px;
@@ -749,7 +756,7 @@ hr {
     top: 0;
     left: 0;
     content: "";
-    z-index: -1;
+    z-index: -5;
     width: 100%;
     height: 100vh;
     background-image: url(../img/front.jpg);
@@ -790,7 +797,7 @@ hr {
     top: 0;
     left: 0;
     content: "";
-    z-index: -1;
+    z-index: -5;
     width: 100%;
     height: 100vh;
     background-image: url(../img/front.jpg);

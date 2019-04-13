@@ -63,10 +63,10 @@ body {
     font-family: "PT Sans", Arial, sans-serif;
     font-size: 1rem;
     margin: 0;
-    background-image: url(../img/bg-body.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    // background-image: url(../img/bg-body.jpg);
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // background-attachment: fixed;
     overflow-x: hidden;
 }
 
@@ -300,6 +300,13 @@ hr {
     font-size: 1.2rem;
     min-height: 800px;
     color: $secondary-color;
+
+    .wrapper {
+        background-image: url(../img/bg-body.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+    }
 }
 
 // CONCERTS 
@@ -355,6 +362,9 @@ hr {
 // FOOTER
 
 .page-footer {
+    position: sticky;
+    bottom: 0;
+    z-index: -3;
     width: 100%;
     padding: 20px 0;
     padding-bottom: 30px;
