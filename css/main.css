@@ -656,20 +656,6 @@ hr {
   transition: 0.5s ease-in-out all;
 }
 
-.concerts-link {
-  display: block;
-  color: #fff;
-  background-color: #0c0c0c;
-  text-decoration: none;
-  width: 250px;
-  -webkit-transition: 0.8s ease-in-out all;
-  transition: 0.8s ease-in-out all;
-}
-
-.concerts-link .small-heading {
-  text-align: center;
-}
-
 .concerts-date {
   display: block;
   margin-left: 20px;
